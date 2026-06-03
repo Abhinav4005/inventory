@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     DATABASE_URL: str
-    ALLOWED_ORIGINS: str = "http://localhost:5173"
+    ALLOWED_ORIGINS: str = "https://inventory-alpha-three.vercel.app"
 
     @property
     def allowed_origins_list(self) -> list[str]:
